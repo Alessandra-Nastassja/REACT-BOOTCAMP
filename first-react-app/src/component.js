@@ -7,7 +7,7 @@ export class FilterableProductTable extends Component {
         return (
             <div>
                 <SearchBar />
-                <ProductTable products={products}/>
+                <ProductTable products={products} />
             </div>
         )
     }
@@ -18,7 +18,7 @@ export class SearchBar extends Component {
     render() {
         return (
             <div>
-                <input type="text" />
+                <input type="text" placeholder="Search..." />
                 <br />
                 <input type="checkbox" />
                 <label>Somente produtos em estoque.</label>
@@ -34,16 +34,16 @@ export class ProductTable extends Component {
         const rows = [];
         let lastCategory = null;
 
-       products.forEach(product => {
-        if(product.category !== lastCategory){
-            rows.push(<ProductCategoryRow category={product.category} key={product.name} />);
-        }else{
-            rows.push(<ProductRow product={product} key={product.name} />)
-            lastCategory = product.category;
-        }
-       })       
+        this.props.products.forEach(product => {
+            if (product.category !== lastCategory) {
+                rows.push(<ProductCategoryRow category={product.category} key={product.name} />);
+            }
+                rows.push(<ProductRow product={product} key={product.name} />)
+                lastCategory = product.category;
+            
+        })
 
-// QUAL É A DIFERENÇA ENTRE PEGAR COM THIS.PROPS.PRODUCTS E PRODUCT ?
+        // QUAL É A DIFERENÇA ENTRE PEGAR COM THIS.PROPS.PRODUCTS E PRODUCT ?
 
         return (
             <table>
@@ -62,10 +62,10 @@ export class ProductTable extends Component {
 }
 
 // CATEGORIA DE PRODUTOS
-export class ProductCategoryRow extends Component{
-    render(){
+export class ProductCategoryRow extends Component {
+    render() {
         const category = this.props.category;
-        return(
+        return (
             <tr>
                 <th colSpan="2">
                     {category}
@@ -78,10 +78,17 @@ export class ProductCategoryRow extends Component{
 // LINHAS DA TABELA DE PRODUTOS
 export class ProductRow extends Component {
     render() {
+        const product = this.props.product;
+        const name = product.stocked ?
+            product.name :
+            <span style={{ color: 'red' }}>
+                {product.name}
+            </span>;
         return (
             <tr>
-                <td>oi</td>
+                <td>{name}</td>
+                <td>{product.price}</td>
             </tr>
-        )
+        );
     }
 }
