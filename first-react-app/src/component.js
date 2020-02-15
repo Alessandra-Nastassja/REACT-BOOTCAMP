@@ -32,10 +32,15 @@ export class ProductTable extends Component {
     render() {
 
         const rows = [];
-        const lasteCategory = null;
+        let lastCategory = null;
 
        products.forEach(product => {
-        console.warn(product);
+        if(product.category !== lastCategory){
+            rows.push(<ProductCategoryRow category={product.category} key={product.name} />);
+        }else{
+            rows.push(<ProductRow product={product} key={product.name} />)
+            lastCategory = product.category;
+        }
        })       
 
 // QUAL É A DIFERENÇA ENTRE PEGAR COM THIS.PROPS.PRODUCTS E PRODUCT ?
@@ -49,8 +54,7 @@ export class ProductTable extends Component {
                     </tr>
                 </thead>
                 <tbody>
-                    <ProductCategoryRow/>
-                    <ProductRow/>
+                    {rows}
                 </tbody>
             </table>
         )
@@ -60,9 +64,12 @@ export class ProductTable extends Component {
 // CATEGORIA DE PRODUTOS
 export class ProductCategoryRow extends Component{
     render(){
+        const category = this.props.category;
         return(
             <tr>
-                <td colSpan="2">hello</td>
+                <th colSpan="2">
+                    {category}
+                </th>
             </tr>
         )
     }
