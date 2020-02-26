@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 
-// VERSÃO ESTÁTICA
 export class FormPage extends Component {
     render() {
         return (
@@ -13,56 +12,80 @@ export class FormPage extends Component {
 }
 
 export class RegisterForm extends Component {
+    constructor(props) {
+        super(props);
+
+        this.state = {
+            nome: '',
+            cidade: '',
+            email: '',
+            cpf: '',
+            telefone: ''
+        }
+
+        this.handleChange = this.handleChange.bind(this)
+    }
+
+    handleChange(event) {
+        const target = event.target;
+        const name = target.name;
+
+        this.setState({ [name]: event.target.value });
+    }
+
+    validacaoEmail = (email) => {
+        email.includes("@") && email.includes(".");
+    }
+
+    handleSubmit = (event) => {
+        event.preventDefault();
+
+        const { nome, cidade, email, cpf, telefone } = this.state;
+
+        if (!nome || !cidade || !email | !cpf || !telefone) {
+            return alert(`Por favor, preencha corretamente o campo`)
+        } else if (!this.validacaoEmail(email)) {
+            return alert(`Por favor, insira um e-mail vádido`)
+        }
+
+    }
+
     render() {
+
         return (
-            <div>
-                <FormInput />
-                <SubmitButton />
-            </div>
+            <form onSubmit={this.handleSubmit}>
+                <FormInput value={this.state.nome} name="nome" onChange={this.handleChange} label="Nome" />
+                <FormInput value={this.state.cidade} name="cidade" onChange={this.handleChange} label="Cidade" />
+                <FormInput value={this.state.email} name="email" onChange={this.handleChange} label="E-mail" />
+                <FormInput value={this.state.cpf} name="cpf" onChange={this.handleChange} label="CPF" />
+                <FormInput value={this.state.telefone} name="telefone" onChange={this.handleChange} label="Telefone" />
+                <SubmitButton value={this.state} />
+            </form>
         )
     }
 }
 
 export class FormInput extends Component {
+
     render() {
         return (
-            <form>
-                <div className="form-group">
-                    <label>Nome completo</label>
-                    <br />
-                    <input type="text" className="form-control"/>
-                </div>
-                <div className="form-group">
-                    <label>Cidade</label>
-                    <br />
-                    <input type="text" className="form-control" />
-                </div>
-                <div className="form-group">
-                    <label>E-mail</label>
-                    <br />
-                    <input type="text" className="form-control" placeholder="email@email.com"/>
-                </div>
-                <div className="form-group">
-                    <label>CPF</label>
-                    <br />
-                    <input type="text" className="form-control" placeholder="000.000.000-00"/>
-                </div>
-                <div className="form-group">
-                    <label>Telefone</label>
-                    <br />
-                    <input type="text" className="form-control" placeholder="(xx) xxxx-xxxx"/>
-                </div>
-            </form>
+            <div className="form-group">
+                <label>{this.props.label}</label>
+                <br />
+                <input type="text"
+                    className="form-control"
+                    name={this.props.name}
+                    value={this.props.value}
+                    onChange={this.props.onChange}
+                />
+
+            </div>
         )
     }
 }
 
 export class SubmitButton extends Component {
     render() {
-        return (
-            <div>
-                <button className="btn btn-success" type="button">Inscrever</button>
-            </div>
-        )
+        return <button type="submit" className="btn btn-success">Inscrever</button>
     }
 }
