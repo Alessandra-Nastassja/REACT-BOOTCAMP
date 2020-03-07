@@ -60,7 +60,6 @@ export class RegisterForm extends Component {
     }
 
     render() {
-
         return (
             <form className="mt-5" onSubmit={this.handleSubmit}>
                 <FormInput value={this.state.nome} name="nome" onChange={this.handleChange} label="Nome completo" placeholder="Digite seu nome completo" />

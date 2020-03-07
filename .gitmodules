@@ -1,0 +1,3 @@
+[submodule "studio-ghibli"]
+	path = studio-ghibli
+	url = https://github.com/Alessandra-Nastassja/REACT-BOOTCAMP.git
