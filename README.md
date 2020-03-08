@@ -13,5 +13,9 @@ Realizado pela comunidade @WoMakersCode.
 
 ## Desafios
 
-- [X] **Desafio 1**: studio-ghibli-challenge
-- [X] **Desafio 2**: todo-list-challenge
+- [X] **Desafio 1**: studio-ghibli-challenge - (07/03)
+- [X] **Desafio 2**: todo-list-challenge - (07/03)
+
+## Hangouts
+
+- [X] **Consumir API CEP** - (04/03)
