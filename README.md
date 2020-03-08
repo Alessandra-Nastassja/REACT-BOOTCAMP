@@ -13,7 +13,7 @@ Realizado pela comunidade @WoMakersCode.
 
 ## Desafios
 
-- [X] **Desafio 1**: studio-ghibli-challenge - (07/03)
+- [X] **Desafio 1**: (studio-ghibli-challenge)[https://github.com/Alessandra-Nastassja/REACT-BOOTCAMP/tree/master/studio-ghibli-challenge] - (07/03)
 - [X] **Desafio 2**: todo-list-challenge - (07/03)
 
 ## Hangouts
