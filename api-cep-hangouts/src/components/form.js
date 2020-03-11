@@ -1,50 +1,64 @@
-import React from "react";
+import React, { Component } from "react";
+ 
+export class Form extends Component{
+    constructor(props){
+        super(props);
 
-export function Form() {
-    return (
-        <div className="row mt-5">
-            <div className="col">
-                <form>
-                    <div className="form-group">
-                        <label htmlFor="cep">Digite seu CEP:</label>
-                        <input type="text" className="form-control" id="cep" placeholder="Digite seu cep" />
-                    </div>
-                    <div className="row">
-                        <div className="col-md-6">
-                            <div className="form-group">
-                                <label htmlFor="rua">Digite sua rua: </label>
-                                <input type="text" className="form-control" id="rua" placeholder="Digite seu rua" />
-                            </div>
-                        </div>
-                        <div className="col-md-6">
-                            <div className="form-group">
-                                <label htmlFor="complemento">Digite seu complemento: </label>
-                                <input type="text" className="form-control" id="complemento" placeholder="Digite seu complemento" />
-                            </div>
-                        </div>
-                    </div>
-                    <div className="row">
-                        <div className="col-md-4">
-                            <div className="form-group">
-                                <label htmlFor="bairro">Digite seu bairro: </label>
-                                <input type="text" className="form-control" id="bairro" placeholder="Digite seu bairro" />
-                            </div>
-                        </div>
-                        <div className="col-md-4">
-                            <div className="form-group">
-                                <label htmlFor="estado">Digite seu estado: </label>
-                                <input type="text" className="form-control" id="estado" placeholder="Digite seu estado" />
-                            </div>
-                        </div>
-                        <div className="col-md-4">
-                            <div className="form-group">
-                                <label htmlFor="uf">Digite seu UF: </label>
-                                <input type="text" className="form-control" id="uf" placeholder="Digite seu UF" />
-                            </div>
-                        </div>
-                    </div>
-                </form>
+        this.state = {
+            cep: '',
+            rua: '',
+            bairro: '',
+            num: '',
+            uf: '',
+            estado: ''
+        }
+    }
+
+    getCep = (cep) => {
+        console.warn(cep);
+        return fetch(`http://viacep.com.br/ws/${cep}/json/`)
+            .then(res => res.json())
+            .then(data => {
+                return data
+            })
+            .catch(err => console.log(err))
+    }
+
+    handleChange = (event) => {
+        const { name, value } = event;
+
+        this.setState({ [name]: value });
+
+        const cepList = this.getCep(value);
+        const { cep, rua, bairro, estado, uf } = cepList;
+        this.setState({ cep, rua, bairro, estado, uf})
+    }
+
+    render(){
+        const { cep, rua, bairro, estado, uf } = this.state
+        
+        return(
+            <form className="mt-5"> 
+                <FormInput name="cep" 
+                    value={cep} 
+                    onChange={ this.handleChange }
+                    label="Cep"/>
+            </form>
+        )
+    }
+}
+
+export class FormInput extends Component{
+    render(){
+        return(
+            <div className="form-group">
+                <label>{ this.props.label }</label>
+                <input type="text" 
+                    className="form-control"
+                    name={this.props.name}
+                    value={this.props.value}
+                    onChange={this.props.onChange}/>
             </div>
-        </div>
-    )
+        )
+    }
 }
