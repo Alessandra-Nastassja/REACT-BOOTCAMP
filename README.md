@@ -1,4 +1,4 @@
-﻿# REACT-BOOTCAMP
+﻿# REACT-BOOTCAMP 🦄 @WoMakersCode
 
 Realizado pela comunidade @WoMakersCode.
 
@@ -18,4 +18,4 @@ Realizado pela comunidade @WoMakersCode.
 
 ## Hangouts
 
-- [ ] **Consumir API CEP** - (04/03)
+- [X] **Consumir API CEP** - (04/03)
