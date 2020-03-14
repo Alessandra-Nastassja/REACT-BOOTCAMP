@@ -15,7 +15,9 @@ Realizado pela comunidade @WoMakersCode.
 
 - [X] **Desafio 1**: studio-ghibli-challenge - (07/03)
 - [ ] **Desafio 2**: todo-list-challenge - (07/03)
+- [ ] **Desafio 3**: react-router - (14/03)
+- [ ] **Desafio 4**: consumir API com autentificação - (14/03)
 
 ## Hangouts
 
-- [X] **Consumir API CEP** - (04/03)
+- [ ] **Consumir API CEP** - (04/03)
