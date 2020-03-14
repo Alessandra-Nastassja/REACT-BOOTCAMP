@@ -20,4 +20,4 @@ Realizado pela comunidade @WoMakersCode.
 
 ## Hangouts
 
-- [ ] **Consumir API CEP** - (04/03)
+- [X] **Consumir API CEP** (Class) - (04/03)

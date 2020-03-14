@@ -6,43 +6,79 @@ export class Form extends Component{
 
         this.state = {
             cep: '',
-            rua: '',
+            logradouro: '',
             bairro: '',
             num: '',
             uf: '',
-            estado: ''
+            localidade: ''
         }
     }
 
-    getCep = (cep) => {
-        console.warn(cep);
-        return fetch(`http://viacep.com.br/ws/${cep}/json/`)
-            .then(res => res.json())
+    getCep = async (cep) => {
+        return await fetch(`http://viacep.com.br/ws/${cep}/json/`)
+            .then(res => res.json())          
             .then(data => {
-                return data
+                return data;
             })
             .catch(err => console.log(err))
     }
 
-    handleChange = (event) => {
-        const { name, value } = event;
+    handleChange = async (field) => {
+        const { name, value } = field;
 
         this.setState({ [name]: value });
 
+        const cepList = await this.getCep(value);
+
+        const { cep, logradouro, bairro, localidade, uf } = cepList;
+        this.setState({ cep, logradouro, bairro, localidade, uf})
+    }
+
+    handleBlur = (value) =>{
         const cepList = this.getCep(value);
-        const { cep, rua, bairro, estado, uf } = cepList;
-        this.setState({ cep, rua, bairro, estado, uf})
+        const { cep, logradouro, bairro, localidade, uf } = cepList;
+        this.setState({ cep, logradouro, bairro, localidade, uf})
     }
 
     render(){
-        const { cep, rua, bairro, estado, uf } = this.state
+        const { cep, logradouro, bairro, localidade, uf } = this.state;
         
         return(
             <form className="mt-5"> 
-                <FormInput name="cep" 
+                <FormInput name="cep"
+                    name="cep"
                     value={cep} 
-                    onChange={ this.handleChange }
+                    onChange={ e => this.handleChange(e.target) }
+                    onBlur={ e => this.handleBlur(e.target.value) }
                     label="Cep"/>
+
+                <FormInput name="logradouro"
+                    name="logradouro"
+                    value={logradouro} 
+                    onChange={ e => this.handleChange(e.target) }
+                    onBlur={ e => this.handleBlur(e.target.value) }
+                    label="Avenida/Rua"/>
+
+                <FormInput name="bairro"
+                    name="bairro"
+                    value={bairro} 
+                    onChange={ e => this.handleChange(e.target) }
+                    onBlur={ e => this.handleBlur(e.target.value) }
+                    label="Bairro"/>
+                    
+                <FormInput name="localidade"
+                    name="localidade"
+                    value={localidade} 
+                    onChange={ e => this.handleChange(e.target) }
+                    onBlur={ e => this.handleBlur(e.target.value) }
+                    label="localidade"/>
+                    
+                <FormInput name="uf"
+                    name="uf"
+                    value={uf} 
+                    onChange={ e => this.handleChange(e.target) }
+                    onBlur={ e => this.handleBlur(e.target.value) }
+                    label="uf"/>
             </form>
         )
     }
