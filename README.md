@@ -24,4 +24,4 @@ Realizado pela comunidade @WoMakersCode.
 
 ## Projeto final
 
-**Call for papers**
+[Call for papers](https://github.com/React-Bootcamp-WoMarkersCode/call-of-papers)
