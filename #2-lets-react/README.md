@@ -5,7 +5,7 @@ Desafio realizado para @WoMakersCode.
 
 ## Desafio ⭐️
 
-Fazer um formulário de cadastro de alunas e validar se todos os campos estão preenchidos antes de dar submit, caso não esteja deve exibir a mensagem para o usuário.
+Crie sua primeira aplicação.
 
 ## *Como rodar ?* 🚀
 ### *Tecnologias usadas:*
