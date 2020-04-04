@@ -12,6 +12,7 @@ Realizado pela comunidade @WoMakersCode.
  5. [Let's hooks it all](https://github.com/Alessandra-Nastassja/REACT-BOOTCAMP/tree/master/%235-class-function) - (07/03)
  6. [Let's React router](https://github.com/Alessandra-Nastassja/REACT-BOOTCAMP/tree/master/%236-react-router) - (14/03)
  7. [Let's Formik forms](#6-forms-formik) - (21/03)
+ 8. [Let's Jest Tests](#6-forms-formik) - (04/04)
 
 ## Desafios
 
