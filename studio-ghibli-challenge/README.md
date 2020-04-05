@@ -1,9 +1,3 @@
-<p align="center">
-  <img src="logo.png" width="200">
-</p>
-
-# 
-
 # Desafio Studio Ghibli 
 
 O objetivo do desafio é criar uma aplicação que lista os filmes do Studio Ghibli. 😀

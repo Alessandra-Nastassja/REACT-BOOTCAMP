@@ -17,9 +17,9 @@ Realizado pela comunidade @WoMakersCode.
 ## Desafios
 
 - [X] **Desafio 1**: studio-ghibli-challenge - (07/03)
-- [ ] **Desafio 2**: todo-list-challenge - (07/03)
+- [X] **Desafio 2**: todo-list-challenge - (07/03)
 - [X] **Desafio 3**: react-router - (14/03)
-- [ ] **Desafio 4**: consumir API com autentificação - (14/03)
+- [X] **Desafio 4**: consumir API com autentificação - (14/03)
 - [X] **Desafio 5**: formulário formik hook - (28/03)
 
 ## Hangouts
