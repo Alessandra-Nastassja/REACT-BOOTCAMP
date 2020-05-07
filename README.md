@@ -16,16 +16,24 @@ Realizado pela comunidade @WoMakersCode.
 
 ## Desafios
 
-- [X] **Desafio 1**: studio-ghibli-challenge - (07/03)
-- [X] **Desafio 2**: todo-list-challenge - (07/03)
-- [X] **Desafio 3**: react-router - (14/03)
-- [ ] **Desafio 4**: consumir API com autentificação - (14/03) -> doing
-- [X] **Desafio 5**: formulário formik hook - (28/03)
+**Desafio 1**: studio-ghibli-challenge - (07/03) :heavy_check_mark:
+
+**Desafio 2**: todo-list-challenge - (07/03) :heavy_check_mark:
+
+**Desafio 3**: react-router - (14/03) :heavy_check_mark:
+
+**Desafio 4**: consumir API com autentificação - (14/03) :warning:
+
+**Desafio 5**: formulário formik hook - (28/03) :heavy_check_mark:
 
 ## Hangouts
 
-- [X] **Consumir API CEP** (Class) - (04/03)
+**Consumir API CEP** (Class) - (04/03) :heavy_check_mark:
 
-## Projeto final
+****
+![](https://user-images.githubusercontent.com/27302446/79700551-e0ee1680-826c-11ea-8898-a257072784c5.png)
 
-[Call for papers](https://github.com/React-Bootcamp-WoMarkersCode/call-of-papers)
+<h3 align="center">Sharing Talks - <i>Projeto final</i></h3>
+<p align="center">Plataforma que conecta eventos da comunidade a voluntários(as). @WoMakersCode</p>
+
+<p align="center">Clique <a href="https://github.com/React-Bootcamp-WoMarkersCode/call-of-papers">aqui</a> para conhecer! 😉</p>
