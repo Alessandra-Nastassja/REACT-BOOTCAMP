@@ -1,6 +1,15 @@
-﻿# REACT-BOOTCAMP 🦄 @WoMakersCode
+<h1 align="center">REACT-BOOTCAMP 🦄 @WoMakersCode</h1>
+<p align="center">Realizado no Bootcamp organizado pela comunidade @WoMakersCode.</p>
 
-Realizado pela comunidade @WoMakersCode.
+<p align="center">
+  <img alt="GitHub language count" src="https://img.shields.io/github/repo-size/Alessandra-Nastassja/REACT-BOOTCAMP?color=blueviolet">
+  <a href="https://github.com/Alessandra-Nastassja/NLW-ROCKETSEAT/commits/master">
+    <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/Alessandra-Nastassja/REACT-BOOTCAMP?color=blueviolet">
+  </a>
+  <a href="https://www.linkedin.com/in/alessandra-nastassja/">
+    <img alt="Made by Alessandra Nastassja" src="https://img.shields.io/badge/made%20by-AlessandraNastassja-%23blueviolet">
+  </a>
+</p>
 
 ******
 ## Aulas
@@ -16,15 +25,11 @@ Realizado pela comunidade @WoMakersCode.
 
 ## Desafios
 
-**Desafio 1**: studio-ghibli-challenge - (07/03) :heavy_check_mark:
-
-**Desafio 2**: todo-list-challenge - (07/03) :heavy_check_mark:
-
-**Desafio 3**: react-router - (14/03) :heavy_check_mark:
-
-**Desafio 4**: consumir API com autentificação - (14/03) :warning:
-
-**Desafio 5**: formulário formik hook - (28/03) :heavy_check_mark:
+* **Desafio 1**: studio-ghibli-challenge - (07/03) :heavy_check_mark:
+* **Desafio 2**: todo-list-challenge - (07/03) :heavy_check_mark:
+* **Desafio 3**: react-router - (14/03) :heavy_check_mark:
+* **Desafio 4**: consumir API com autentificação - (14/03) :warning:
+* **Desafio 5**: formulário formik hook - (28/03) :heavy_check_mark:
 
 ## Hangouts
 
