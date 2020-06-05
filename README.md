@@ -14,14 +14,14 @@
 ******
 ## Aulas: ⭐️
 
- 1. [Javascript avançado](https://github.com/Alessandra-Nastassja/REACT-BOOTCAMP/tree/master/%231-javascript-avancado) - (01/02)
- 2. [Let's react](https://github.com/Alessandra-Nastassja/REACT-BOOTCAMP/tree/master/%232-lets-react) - (08/02)
- 3. [Let's input react](https://github.com/Alessandra-Nastassja/REACT-BOOTCAMP/tree/master/%233-lets-input-react) - (15/02)
- 4. [Let's Context Everthing](#4-everthing) - (29/02)
- 5. [Let's hooks it all](https://github.com/Alessandra-Nastassja/REACT-BOOTCAMP/tree/master/%235-class-function) - (07/03)
- 6. [Let's React router](https://github.com/Alessandra-Nastassja/REACT-BOOTCAMP/tree/master/%236-react-router) - (14/03)
- 7. [Let's Formik forms](#6-forms-formik) - (21/03)
- 8. [Let's Jest Tests](#6-forms-formik) - (04/04)
+ 1. [Javascript avançado](https://github.com/Alessandra-Nastassja/REACT-BOOTCAMP/tree/master/%231-javascript-avancado) - (01/02) :heavy_check_mark:
+ 2. [Let's react](https://github.com/Alessandra-Nastassja/REACT-BOOTCAMP/tree/master/%232-lets-react) - (08/02) :heavy_check_mark:
+ 3. [Let's input react](https://github.com/Alessandra-Nastassja/REACT-BOOTCAMP/tree/master/%233-lets-input-react) - (15/02) :heavy_check_mark:
+ 4. [Let's Context Everthing](#4-everthing) - (29/02) :heavy_check_mark:
+ 5. [Let's hooks it all](https://github.com/Alessandra-Nastassja/REACT-BOOTCAMP/tree/master/%235-class-function) - (07/03) :heavy_check_mark:
+ 6. [Let's React router](https://github.com/Alessandra-Nastassja/REACT-BOOTCAMP/tree/master/%236-react-router) - (14/03) :heavy_check_mark:
+ 7. [Let's Formik forms](#6-forms-formik) - (21/03) :heavy_check_mark:
+ 8. [Let's Jest Tests](#6-forms-formik) - (04/04) :heavy_check_mark:
 
 ## Desafios: 🥇
 
@@ -33,10 +33,12 @@
 
 ## Hangouts: 🖥️
 
-**Consumir API CEP** (Class) - (04/03) :heavy_check_mark:
+* **Consumir API CEP** (Class) - (04/03) :heavy_check_mark:
 
 ****
 ## Projeto final: 🏆
+
+Como desafio final foi proposto um projeto que ajudasse a comunidade de alguma forma. Assim escolhemos esta linda causa! 
 
 ![](https://user-images.githubusercontent.com/27302446/79700551-e0ee1680-826c-11ea-8898-a257072784c5.png)
 
